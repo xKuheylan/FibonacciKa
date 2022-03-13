@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+
+	int c = 0, a = 1, b = 0;
+
+	cout << "1  ";   //başlangıç
+
+	for (; ;) {
+
+		c = a + b;
+
+		if (c > 30) {
+			break;
+		}
+
+		cout << c << "  ";
+
+		b = a;
+		a = c;
+	}
+
+	cout << endl << endl;
+
+	return 0;
+}
